@@ -5,7 +5,7 @@ files:
     destination: /var/www/html/WordPress
 hooks:
   BeforeInstall:
-    - location: npm i 
+    - location: beforeInstall.sh
       timeout: 300
       runas: root
   # AfterInstall:
@@ -13,7 +13,7 @@ hooks:
   #     timeout: 300
   #     runas: root
   ApplicationStart:
-    - location: npm start
+    - location: appStart.sh
       timeout: 300
       runas: root
   ApplicationStop:
