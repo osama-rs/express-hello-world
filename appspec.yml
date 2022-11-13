@@ -7,16 +7,12 @@ hooks:
   BeforeInstall:
     - location: beforeInstall.sh
       timeout: 300
-      runas: root
-  # AfterInstall:
-  #   - location: echo "Install finished"
-  #     timeout: 300
-  #     runas: root
+      runas: ubuntu
   ApplicationStart:
     - location: appStart.sh
       timeout: 300
-      runas: root
+      runas: ubuntu
   ApplicationStop:
     - location: appStop.sh
       timeout: 300
-      runas: root
+      runas: ubuntu
