@@ -8,10 +8,10 @@ hooks:
     - location: npm i 
       timeout: 300
       runas: root
-  AfterInstall:
-    - location: echo "Install finished"
-      timeout: 300
-      runas: root
+  # AfterInstall:
+  #   - location: echo "Install finished"
+  #     timeout: 300
+  #     runas: root
   ApplicationStart:
     - location: npm start
       timeout: 300
