@@ -17,6 +17,6 @@ hooks:
       timeout: 300
       runas: root
   ApplicationStop:
-    - location: echo "kill"
+    - location: appStop.sh
       timeout: 300
       runas: root
