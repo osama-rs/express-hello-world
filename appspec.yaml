@@ -5,11 +5,11 @@ files:
     destination: /var/www/html/WordPress
 hooks:
   BeforeInstall:
-    - location: echo "BeforeInstall"
+    - location: npm i 
       timeout: 300
       runas: root
   AfterInstall:
-    - location: echo "BeforeInstall"
+    - location: echo "Install finished"
       timeout: 300
       runas: root
   ApplicationStart:
@@ -17,6 +17,6 @@ hooks:
       timeout: 300
       runas: root
   ApplicationStop:
-    - location: scripts/stop_server.sh
+    - location: echo "kill"
       timeout: 300
       runas: root
