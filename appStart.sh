@@ -1,6 +1,5 @@
 #!/bin/bash
-PATH=$PATH:$HOME/.nvm/versions/node/
+PATH=$HOME/.nvm/versions/node/v16.18.1/bin:$PATH
 env
-echo $PATH
 node index.js
 exit 0
