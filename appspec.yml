@@ -2,8 +2,14 @@ version: 0.0
 os: linux
 files:
   - source: .
-    destination: $HOME/app/
+    destination: /cloudpatrol
 files_exists_behaviour: OVERWRITE
+permissions:
+  - object: /cloudpatrol
+#    except:
+    owner: root
+    group: root
+    mode: 644
 hooks:
   BeforeInstall:
     - location: beforeInstall.sh
