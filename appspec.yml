@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: $HOME/dist/
+    destination: /var/app/
 files_exists_behaviour: OVERWRITE
 hooks:
   BeforeInstall:
