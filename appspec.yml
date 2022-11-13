@@ -2,7 +2,8 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: $HOME/dist
+    destination: $HOME/dist/
+files_exists_behaviour: OVERWRITE
 hooks:
   BeforeInstall:
     - location: beforeInstall.sh
